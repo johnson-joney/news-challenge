@@ -71,6 +71,6 @@ describe('NavbarComponent', () => {
     component.dispatchAction('movies');
     fixture.detectChanges();
 
-    expect(store.dispatch).toHaveBeenCalledWith('movies');
+    expect(store.dispatch).toHaveBeenCalledWith({type: NewsActions.FILTER_SUBSECTION, payload: 'movies'});
   });
 });

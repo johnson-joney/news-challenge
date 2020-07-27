@@ -8,7 +8,7 @@ describe('The sections reducer', () => {
             'science', 'health', 'sports', 'arts', 'books', 'movies', 'theater', 'fashion',
             'food', 'travel', 'magazine', 'realestate', 'automobiles'
         ];
-        const createAction = { type: 'LOAD_SECTIONS', payload: {} };
+        const createAction = { type: '[Section] LOAD_SECTIONS', payload: {} };
         const result = sections(state, createAction);
 
         // expectation
