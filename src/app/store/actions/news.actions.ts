@@ -9,14 +9,14 @@ export class NewsActions {
 
     LoadSectionNews(list: News[]): Action {
         return {
-            type: '',
-            payload: ''
+            type: NewsActions.LOAD_SECTION_NEWS,
+            payload: list
         };
     }
     FilterSubsection(subsection: string): Action {
         return {
-            type: '',
-            payload: ''
+            type: NewsActions.FILTER_SUBSECTION,
+            payload: subsection
         };
     }
 }

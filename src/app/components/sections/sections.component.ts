@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { sections } from '../../store/reducers/sections.reducer';
+import { initialState, LOAD_SECTIONS, sections } from '../../store/reducers/sections.reducer';
 // import { Observable } from 'rxjs/Observable';
 
 @Component({
@@ -13,6 +13,7 @@ export class SectionsComponent implements OnInit {
   sectionList: any;
 
   constructor() {
+    this.sectionList = sections(initialState, {type: LOAD_SECTIONS, payload: {}});
   }
 
   ngOnInit() {}

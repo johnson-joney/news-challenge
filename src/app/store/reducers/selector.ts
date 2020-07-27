@@ -1,4 +1,5 @@
 import {createSelector } from 'reselect';
-import { getNewsList, getFilter } from './news.reducer';
+import { getNewsList, getFilter, getSubSectionsList } from './news.reducer';
 
-export const getNews = '';
+export const getNews = createSelector(getNewsList, news => { return news; });
+export const getSubSections = createSelector(getSubSectionsList, sections => { return sections; });

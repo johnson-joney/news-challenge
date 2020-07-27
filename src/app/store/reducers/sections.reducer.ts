@@ -14,9 +14,9 @@ export const initialState = [
 export function sections (state = initialState, action: Action) {
     switch (action.type) {
         case LOAD_SECTIONS: {
-            return 0;
+            return state;
         }
         default:
-            return 0;
+            return state;
     }
 }
